@@ -45,10 +45,32 @@ namespace ListExercise
                         if (response2 == "hometown")
                         {
                             Console.WriteLine($"{names[number]} is from {places[number]}");
+                            Console.WriteLine($"Would you like to know more about {names[number]}?");
+                            string holder3 = Console.ReadLine();
+                            string response3 = holder3.ToLower();
+                            if (response3 == "y")
+                            {
+                                Console.WriteLine($"{names[number]} loves to eat {foods[number]}");
+                            }
+                            else
+                            {
+                                break;
+                            }
                         }
                         else if (response2 == "favorite food")
                         {
                             Console.WriteLine($"{names[number]} loves to eat {foods[number]}");
+                            Console.WriteLine($"Would you like to know more about {names[number]}?");
+                            string holder4 = Console.ReadLine();
+                            string response4 = holder4.ToLower();
+                            if (response4 == "y")
+                            {
+                                Console.WriteLine($"{names[number]} is from {places[number]}");
+                            }
+                            else
+                            {
+                                break;
+                            }
                         }
                         else
                         {
